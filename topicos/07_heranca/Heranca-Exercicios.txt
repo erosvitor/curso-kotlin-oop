@@ -1,0 +1,49 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - HERANÇA - EXERCÍCIOS
+====================================================================================================
+
+Exercício 01 - Locadora de Veículos
+----------------------------------------------------------------------------------------------------
+Foi realizado um levantamento de dados para um sistema de locação de veículos. Analisando os dados
+iniciais, percebeu-se que muitos dados estão duplicados. Utilizando o conceito de herança da 
+orientação a objetos, modelar classes de tal forma que toda duplicidade de dados seja eliminada.
+
+Instruções:
+
+- Criar um programa chamado LocadoraVeiculos
+
+- Com base nos dados iniciais abaixo, aplicar a herança para eliminar os dados duplicados
+
+  - Clientes
+    Nome, Endereço, Telefone, CPF, Data Nascimento
+
+  - Funcionarios
+    Nome, Endereço, Telefone, CPF, Data Nascimento, Cargo
+
+  - Fornecedores
+    Nome, Endereço, Telefone, CNPJ, Ramo Atividade
+
+  - Automóvel
+    Marca, Modelo, Placa, Ano, KM, Portas
+
+  - Moto
+    Marca, Modelo, Placa, Ano, KM, Cilindradas
+
+- Criar um cliente com os seguintes dados:
+
+  Fulano da Silva
+  Rua Sem nome, 999
+  41-998890110
+  102.113.609-37
+  10/02/1982
+
+- Criar um funcionario com os seguintes dados:
+
+  Beltrano Gomes
+  Av das coisas, 1000
+  41-32002030
+  215.079.299-00
+  05/12/1985
+  Vendedor
+

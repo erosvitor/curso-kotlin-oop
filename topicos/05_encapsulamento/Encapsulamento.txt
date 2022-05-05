@@ -1,0 +1,81 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - ENCAPSULAMENTO
+====================================================================================================
+
+Descrição
+----------------------------------------------------------------------------------------------------
+O encapsulamento é um recurso da programação orientada a objetos que proporciona implementar 
+segurança na utilização da classe e seus atributos. 
+
+Através do encapsulamento os atributos são acessados através de métodos específicos. Estes métodos
+recebem o nome de métodos getters e setters. Os métodos getters são responsáveis por retornarem o
+conteúdo dos atributos. Já os métodos setters permitem que os atributos recebem dados.
+
+A linguagem Kotlin não exige a declaração explícita dos métodos getters e setters. Eles são gerados
+automaticamente.
+
+O código abaixo ...
+
+class Livro {
+
+  var titulo: String = ""
+  var anoLancamento: Short = 0
+}  
+
+... é equivalente ao código ...
+
+class Livro {
+
+  var titulo: String = ""
+    get() {
+      return field
+    }
+    set(value) {
+      field = value
+    }
+  var anoLancamento: Short = 0
+    get() {
+      return field
+    }
+    set(value) {
+      field = value
+    }
+}
+
+Em Koltin não é necessário declarar o atributo como privado para utilizar os getters and setters.
+ 
+
+Customizando os getters e setters
+----------------------------------------------------------------------------------------------------
+
+class Livro {
+
+  var titulo: String = ""
+    get() {
+      return field
+    }
+    set(value) {
+      field = value
+    }
+  var anoLancamento: Short = 0
+    get() {
+      return field
+    }
+    set(value) {
+      field = value
+    }
+  var avaliacao: Short = 0
+    get() {
+      if (field < 5) println("Atenção! Este livro é péssimo")
+      return field
+    }
+    set(value) {
+      field = when {
+        value > 10 -> 10
+        value < 0 -> 0
+        else -> value
+      }  
+    }
+}
+

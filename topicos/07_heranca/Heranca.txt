@@ -1,0 +1,69 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - HERANÇA
+====================================================================================================
+
+Descrição
+----------------------------------------------------------------------------------------------------
+A herança é um recurso da orientação a objetos que permite que uma classe herde atributos e métodos
+de outra classe.
+
+
+Cenário para aplicação da herança
+----------------------------------------------------------------------------------------------------
+
+Dados do Cliente
+- Nome, Endereço, CPF
+
+Dados do Fornecedor
+- Nome, Endereço, CNPJ
+
+
+No levantamento acima observa-se que alguns dados se repetem para Clientes e Fornecedores. Pode-se
+aplicar a herança para remover a duplicidade dos dados, diminuindo a complexidade das classes e 
+facilitando a implementação do código.
+
+Dados Pessoa
+- Nome, Endereço
+
+Dados Cliente (é uma pessoa)
+- CPF
+
+Dados Fornecedor (é uma pessoa)
+- CNPJ
+
+
+Aplicando a herança
+----------------------------------------------------------------------------------------------------
+
+open class Pessoa {
+  var nome: String? = null
+}
+
+class PessoaFisica : Pessoa() {
+  var cpf: String? = null
+}
+
+class PessoaJuridica : Pessoa() {
+  var cnpj: String? = null
+}
+
+fun main() {
+  val pf = PessoaFisica()
+  pf.nome = "Fulano da Silva"
+  pf.cpf = "304.349.920-46"
+  println("%s, %s".format(pf.nome, pf.cpf))
+
+  val pj = PessoaJuridica()
+  pj.nome = "Empresa XYZ Ltda"
+  pj.cnpj = "93.064.305/0001-48"
+  println("%s, %s".format(pj.nome, pj.cnpj))
+}
+
+
+Benefícios da herança
+----------------------------------------------------------------------------------------------------
+- Redundância de dados
+- Implementação
+- Manutenção
+

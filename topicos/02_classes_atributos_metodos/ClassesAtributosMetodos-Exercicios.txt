@@ -1,0 +1,38 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - CLASSES, ATRIBUTOS E MÉTODOS - EXERCÍCIOS
+====================================================================================================
+
+Exercício 01 – Calcular Salário
+----------------------------------------------------------------------------------------------------
+Criar um programa para calcular o salário de um determinado funcionário.
+
+Instruções:
+
+- Criar um projeto chamado CalcularSalario
+- Criar uma classe chamada Funcionario contendo os seguintes atributos:
+  - nome, cargo e valor hora
+- Adicionar um método na classe Funcionario que receba a quantidade de horas trabalhadas e retorne o
+  valor do salário baseado nas horas trabalhadas.
+- Assumir como valor hora o valor de 14,50
+- Mostrar na tela o salário de um funcionário que trabalhou 30 horas na semana
+
+
+Exercício 02 – Tabela Preços
+----------------------------------------------------------------------------------------------------
+Criar um programa para exibir uma tabela de preços para um determinado produto.
+
+Instruções:
+
+- Criar um projeto chamado TabelaPrecos
+- Criar uma classe chamada Produto contendo os seguintes atributos:
+  - descricao e preco
+- Criar três métodos, um para retornar o preço distribuidor, outro para retornar 
+  o preço representante e um terceiro método para retornar o preço consumidor.
+- Assumir as seguintes taxas:
+  - O preço do distribuidor é o preço do produto + 3%
+  - O preço do representante é o preço do produto + 4,5%
+  - O preço do consumidor é o preço do produto + 5,5%
+- Criar um produto, preencher os dados e mostrar na tela os precos para distribuidor, representante e
+  consumido
+

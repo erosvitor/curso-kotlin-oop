@@ -1,0 +1,40 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - MÉTODOS ESTÁTICOS - EXERCÍCIOS
+====================================================================================================
+
+Exercício 01 - Calculo Juros
+----------------------------------------------------------------------------------------------------
+Criar um programa para calcular juros simples e juros compostos.
+
+Instruções:
+
+- Criar um projeto chamado CalculoJuros
+- Criar uma classe chamada Juros com os seguintes métodos estáticos:
+  - Um método para calcular juros simples
+  - Um segundo método para calcular juros compostos
+- Os dois métodos da classe Juros devem receber como parâmetros os seguintes valores:
+  - capital, taxa e período
+- OBS: Assumir a taxa como taxa mensal e o período em meses.
+
+
+Exercício 02 - IMC
+----------------------------------------------------------------------------------------------------
+Criar um programa para calcular o índice de massa corporal (IMC) de uma determinada pessoa.
+
+Instruções:
+
+- Criar um projeto chamado CalculoIMC
+- Criar uma classe chamada IMC contendo os seguintes métodos estáticos:
+  - Um método que retorne o índice de massa corporal (IMC)
+  - Um segundo método que retorne a classificação IMC que o usuário se encontra
+- Para calcular o IMC utilizar a seguinte fórmula:
+  IMC = Peso / Altura^2
+- Para definir a classificação IMC do usuário, utilizar a tabela abaixo
+
+  IMC                    Classificação
+  ------------------------------------
+  Menor ou igual a 18.5  Magro
+  Entre 18.6 e 24.9      Normal
+  Entre 25 e 29.9        Pré-obeso
+  Maior ou igual a 30    Obeso

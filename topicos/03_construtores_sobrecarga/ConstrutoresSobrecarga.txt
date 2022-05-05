@@ -1,0 +1,70 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - CONSTRUTORES e SOBRECARGA
+====================================================================================================
+
+Descrição
+----------------------------------------------------------------------------------------------------
+O construtor é um recurso da programação orientada a objetos utilizado para preparar a objeto para
+uso. No construtor pode-se atribuir valores default aos atributos, pode-se também executar alguma
+operação pertinente ao objeto.
+
+O construtor é executado apenas uma vez quando o objeto é criado. Não pode ser invocado manualmente
+após a criação do objeto.
+
+
+Declarando um construtor
+----------------------------------------------------------------------------------------------------
+
+class Aluno {
+
+  var nome: String = ""
+  var ativo: Boolean
+
+  constructor() {
+    this.ativo = true;
+  }
+}
+
+fun main() {
+
+  val aluno1 = Aluno()
+  if (aluno1.ativo) {
+    println("Aluno esta ativo")
+  } else {
+    println("Aluno não esta ativo")
+  }
+
+}
+
+
+Sobrecarregando o construtor
+--------------------------------------------------------------------------------
+
+class Aluno {
+
+  var nome: String = ""
+  var ativo: Boolean
+
+  constructor() {
+    this.ativo = true
+  }
+
+  constructor(nome: String) {
+    this.nome = nome
+    this.ativo = true
+  }
+
+}
+
+fun main() {
+
+  val aluno1 = Aluno("Fulano da Silva")
+  if (aluno1.ativo) {
+    println("O aluno ${aluno1.nome} esta ativo")
+  } else {
+    println("O aluno ${aluno1.nome} não esta ativo")
+  }
+
+}
+

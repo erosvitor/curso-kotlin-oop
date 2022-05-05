@@ -1,0 +1,53 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - CONSTRUTORES e SOBRECARGA - EXERCÍCIOS
+====================================================================================================
+
+Exercício 01 - ContaCorrente
+----------------------------------------------------------------------------------------------------
+Criar um programa para controlar uma conta corrente.
+
+Instruções:
+
+- Criar um projeto chamado ContaCorrente
+- Criar uma classe chamada ContaCorrente contendo os seguintes atributos:
+  - numero, saldo e limite
+- Adicionar os seguintes métodos na classe ContaCorrente:
+  - Um método para efetuar o depósito
+  - Um método para efetuar o saque
+  - Um método para consultar o saldo
+- Adicionar uma verificação no método 'saque' para impedir que seja sacado um valor que não esteja
+  disponível
+- Adicionar um construtor padrão que preenche o atributo 'limite' com o valor de 500,00
+- Sobrecarregar o construtor de tal forma que seja possível passar o valor do limite no momento em 
+  que a conta corrente for criada
+- Definir um terceiro construtor sobrecarregado para que todos os dados da conta sejam informados
+  no momento em que ela for criada.
+- Criar uma conta corrente com os seguintes dados:
+  Número: 0101-02
+  Saldo: 5000
+  Limite: 1000
+- Efetuar um depósito de 1000,00
+- Realizar um saque de 570,00
+- Exibir o saldo atual
+
+
+Exercício 02 - Calendario
+----------------------------------------------------------------------------------------------------
+Alterar a classe Calendario para que ela possa receber uma data no formato string
+no momento em que ela for criada.
+
+Instruções:
+
+- Adicionar os seguintes atributos na classe Calendario
+  - dia, mes e ano
+- Definir o construtor padrão
+- Sobrecarregar o construtor padrão de tal forma que seja possível passar uma data no formato string
+- No construtor sobrecarregado deve-se pegar a data e separá-la em dia, mes e ano, guardando os 
+  valores nos respectivos atributos.
+- Adicionar um método que retorne o mês por extenso
+- Adicionar um método que retorne a data por extenso
+- Criar um calendario para a data atual
+- Mostrar na tela o mês por extenso
+- Mostrar na tela a data por extenso
+

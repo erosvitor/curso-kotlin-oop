@@ -1,0 +1,31 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - SOBRECARGA - EXERCÍCIOS
+====================================================================================================
+
+Exercício 01 - Tabela de Preços
+----------------------------------------------------------------------------------------------------
+Sobrecarregar cada um dos métodos da classe Produto de tal forma que seja possível passar a taxa a
+ser utilizada na definição de cada preço. Obs. Os métodos atuais devem ser mantidos.
+
+Após aplicar a sobrecarga dos métodos, deve-se criar um produto e exibir a tabela de preços conforme
+os dados abaixo:
+
+  Descrição: Fone de ouvido JBL
+  Preço: 127,90
+
+  Exibir a tabela de preços conforme as taxas abaixo:
+
+    - Distribuidor: 7,5%
+    - Representante: 8,0%
+    - Consumidor: 10%
+
+
+Exercício 02 - Calendario
+----------------------------------------------------------------------------------------------------
+Sobrecarregar o construtor da classe Calendario de tal forma que uma data no formato LocalDate seja
+informada. Este novo construtor deve obter o dia, mes, ano e dia da semana e armazenar nos atributos
+respectivos.
+
+Após sobrecarregar o construtor, deve-se exibir a data atual por extenso.
+

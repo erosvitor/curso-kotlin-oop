@@ -1,0 +1,71 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - SOBRECARGA
+====================================================================================================
+
+Descrição
+----------------------------------------------------------------------------------------------------
+A sobrecarga é um recurso que permite que dois ou mais métodos tenham o mesmo nome, mas com
+parâmetros diferentes.
+
+Os parâmetros podem ser diferentes em dois modos: na quantidade ou no tipo.
+
+
+Implementando a sobrecarga
+----------------------------------------------------------------------------------------------------
+
+class FigurasPlanas {
+
+  fun calcularAreaQuadrado(lado: Int): Int {
+    return lado * lado
+  }
+
+  fun calcularAreaCirculo(raio: Float): Float {
+    return 3.14f * (raio * raio)
+  }
+  
+}
+
+
+Para calcular áreas de quadrados contendo lados decimais...
+
+class FigurasPlanas {
+
+  fun calcularAreaQuadrado(lado: Int): Int {
+    return lado * lado
+  }
+
+  fun calcularAreaQuadrado(lado: Float): Float {
+    return lado * lado
+  }
+
+  fun calcularAreaCirculo(raio: Float): Float {
+    return 3.14f * (raio * raio)
+  }
+  
+}
+
+
+Para calcular áreas de círculos com valores de PI diferentes.
+
+class FigurasPlanas {
+
+  fun calcularAreaQuadrado(lado: Int): Int {
+    return lado * lado
+  }
+
+  fun calcularAreaQuadrado(lado: Float): Float {
+    return lado * lado
+  }
+
+  fun calcularAreaCirculo(raio: Float): Float {
+    return 3.14f * (raio * raio)
+  }
+
+  fun calcularAreaCirculo(raio: Float, pi: Float): Float {
+    return pi * (raio * raio)
+  }
+  
+}
+
+

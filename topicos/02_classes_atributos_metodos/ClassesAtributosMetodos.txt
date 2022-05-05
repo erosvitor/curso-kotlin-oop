@@ -1,0 +1,164 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - CLASSES, ATRIBUTOS E MÉTODOS
+====================================================================================================
+
+Descrição
+----------------------------------------------------------------------------------------------------
+Na programação orientada a objetos uma classe é a abstração de um determinado objeto para o meio
+computacional. A classe pode representar tanto objetos concretos como objetos abstratos.
+
+Exemplos de objetos concretos:
+
+- Carro
+- Aluno
+- Computador
+- Nota fiscal
+- Livro
+- Boletim escolar
+
+Exemplos de objetos abstratos:
+
+- Conta corrente
+- Curso
+
+Uma classe também pode abstrair um conceito que só exista no domínio de negócio para o qual o 
+programa de computador esta sendo criado. Por exemplo, uma classe que representa o acesso a um 
+banco de dados.
+
+Uma classe possui uma estrutura composta por atributos e métodos. Os atributos são utilizados para
+armazenar dados sobre o objeto. Já os métodos são utilizados para representar as ações que o 
+objeto pode executar.
+
+Por exemplo, uma classe que abstraia o objeto 'carro' pode ter como atributos a marca, modelo, ano
+e cor do veículos. Como métodos, pode ter ligar, desligar, acelerar e freiar.
+
+Importante observar que os atributos sempre são substantivos e os métodos são verbos. 
+
+ 
+Definindo uma classe
+----------------------------------------------------------------------------------------------------
+
+class Carro {
+
+}
+
+
+Adicionando atributos
+----------------------------------------------------------------------------------------------------
+
+class Carro {
+  var marca: String = ""
+  var modelo: String = ""
+  var cor: String = ""
+}
+
+
+Utilizando os atributos
+----------------------------------------------------------------------------------------------------
+
+class Carro {
+  var marca: String = ""
+  var modelo: String = ""
+  var cor: String = ""
+}
+
+fun main() {
+  val carro1 = Carro()
+  carro1.marca = "Ford"
+  carro1.modelo = "Fusion"
+  carro1.cor = "Preta"
+}
+
+
+Efetuando calculos
+----------------------------------------------------------------------------------------------------
+
+class Carro {
+  var marca: String = ""
+  var modelo: String = ""
+  var cor: String = ""
+  var capacidadeTanque: Float = 0.0F
+  var kmPorLitro: Float = 0.0F
+}
+
+fun main() {
+  val carro1 = Carro()
+  carro1.marca = "Ford"
+  carro1.modelo = "Fusion"
+  carro1.cor = "Preta"
+  carro1.capacidadeTanque = 55F
+  carro1.kmPorLitro = 8F
+
+  val autonomia = carro1.capacidadeTanque * carro1.kmPorLitro
+  println("Autonomia do carro ${carro1.modelo} é de $autonomia")
+}
+
+
+Métodos
+----------------------------------------------------------------------------------------------------
+
+class Carro {
+  var marca: String = ""
+  var modelo: String = ""
+  var cor: String = ""
+  var capacidadeTanque: Float = 0.0F
+  var kmPorLitro: Float = 0.0F
+
+  fun calcularAutonomia(): Float {
+    return this.capacidadeTanque * this.kmPorLitro
+  }
+}
+
+fun main() {
+
+  val carro1 = Carro()
+  carro1.marca = "Ford"
+  carro1.modelo = "Fusion"
+  carro1.cor = "Preta"
+  carro1.capacidadeTanque = 55F
+  carro1.kmPorLitro = 8F
+
+  val autonomia = carro1.calcularAutonomia()
+  println("Autonomia do carro ${carro1.modelo} é de $autonomia")
+
+}
+
+
+Métodos e Parâmetros
+----------------------------------------------------------------------------------------------------
+
+class Carro {
+  var marca: String = ""
+  var modelo: String = ""
+  var cor: String = ""
+  var capacidadeTanque: Float = 0.0F
+  var kmPorLitro: Float = 0.0F
+
+  fun calcularAutonomia(): Float {
+    return this.capacidadeTanque * this.kmPorLitro
+  }
+
+  fun calcularCombustivel(km: Float): Float {
+    return km / kmPorLitro
+  }
+}
+
+fun main() {
+
+  val carro1 = Carro()
+  carro1.marca = "Ford"
+  carro1.modelo = "Fusion"
+  carro1.cor = "Preta"
+  carro1.capacidadeTanque = 55F
+  carro1.kmPorLitro = 8F
+
+  val autonomia = carro1.calcularAutonomia()
+  println("Autonomia do carro ${carro1.modelo} é de $autonomia")
+
+  val quilometragem = 400F
+  val qtdeCombustivel = carro1.calcularCombustivel(quilometragem)
+  println("Para uma viagem de $quilometragem km, são necessários $qtdeCombustivel litros de combustível")
+
+}
+

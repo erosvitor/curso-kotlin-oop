@@ -1,0 +1,95 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - INTRODUÇÃO
+====================================================================================================
+
+Introdução
+----------------------------------------------------------------------------------------------------
+A programação orientada a objetos é um paradigma de programação onde o algoritmo é estruturado e 
+organizado com base no conceito de objeto.
+
+Um objeto pode ser definido como qualquer coisa que pode ser tocado, visto ou pensado. Os objetos
+podem ser concretos ou abstratos.
+
+Exemplos de objetos concretos:
+- Computador, Carro, Pessoa, Animal, Nota Fiscal
+
+Exemplos de objetos abstratos:
+- Conta bancária, Disciplina de um curso
+
+
+Classe
+----------------------------------------------------------------------------------------------------
+Classes são recursos de uma linguagem de programação orientada a objetos para abstrair o conceito e
+as características de um determinado objeto para dentro do algoritmo.
+
+Através das classes é possível modelar algoritmos o mais próximo da realidade do contexto para o qual
+se esta escrevendo o algoritmo. Isto permite criar algoritmos mais eficientes, mais fáceis de manter
+e também mais fáceis de evoluir.
+
+
+Estrutura de uma classe
+----------------------------------------------------------------------------------------------------
+Uma classe possui uma estrutura composta pelos seguintes ítens:
+
+- Identificador
+- Atributos
+- Métodos
+
+Os atributos são utilizados para armazenar os dados do objeto e os metódos são responsáveis por 
+executar as ações do objeto.
+
+
+Objeto vs Classe
+----------------------------------------------------------------------------------------------------
+Para exemplificar como um objeto é abstraído, vamos mapear as características de um objeto do tipo
+carro para a estrutura da classe.
+
+  Objeto Carro      Classe Carro
+  ------------------------------
+  Marca             Atributo marca
+  Modelo            Atributo modelo
+  Cor               Atributo cor
+
+  Ligar             Método ligar
+  Desligar          Método desligar
+     
+
+Implementando uma classe
+----------------------------------------------------------------------------------------------------
+
+class Carro {
+
+  // Atributos
+  var marca:String = ""
+  var modelo:String = ""
+  var cor:String = ""
+
+  // Métodos
+  fun ligar() {
+    println("Carro ligado")
+  }
+
+  fun desligar() {
+    println("Carro desligado")
+  }
+
+}
+
+Utilizando uma classe
+----------------------------------------------------------------------------------------------------
+Após o objeto ser abstraído para a estrutura da classe, tem-se um modelo que representa o objeto. A
+atividade de abstrair um objeto para um classe chama-se de modelagem de classe. 
+
+Com a classe modelada, pode-se criar os objetos e utilizá-los. 
+
+var carro1 = Carro()
+carro1.marca = "Ford"
+carro1.modelo = "Fusion"
+carro1.cor = "Preta"
+
+var carro2 = Carro()
+carro2.marca = "Fiat"
+carro2.modelo = "Palio"
+carro2.cor = "Prata"
+

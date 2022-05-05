@@ -1,0 +1,57 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - ENCAPSULAMENTO - EXERCÍCIOS
+====================================================================================================
+
+Exercício 01 - Triangulo
+----------------------------------------------------------------------------------------------------
+Criar um programa que forneça informações sobre um triângulo.
+
+Instruções:
+
+- Criar um projeto chamado Triangulo
+- Criar uma classe chamada Triangulo contendo os seguintes atributos:
+  - lado1, lado2 e lado3
+- Aplicar o encapsulamento
+- Adicionar um método que verifique se os lados podem formar um triangulo
+  - A condição para que três lados formem um triângulo esta definida abaixo;
+    | b - c | < a < b + c
+    | a - c | < b < a + c
+    | a - b | < c < a + b 
+- Adicionar um segundo método que retorne o tipo do triângulo
+  - Os tipos de triângulos existentes estão relacionados abaixo.
+    - Escaleno: todos os lados são diferentes
+    - Isósceles: dois lados iguais
+    - Equilátero: todos os lados são iguais
+- Utilizar a classe Triangulo para verificar se os seguintes lados formam um triângulo
+  - 10, 14, 18
+- Caso os lados acima formem um triângulo, mostrar na tela qual o tipo do triângulo é formado
+  pelos lados.
+
+
+Exercício 02 - AgendaContatos
+----------------------------------------------------------------------------------------------------
+Criar um programa para armazenar contatos telefônicos.
+
+Instruções:
+
+- Criar um projeto chamado AgendaContatos
+- Criar uma classe chamada Contato contendo os seguintes atributos:
+  - nome, telefone, email
+- Aplicar o encapsulamento
+- Criar um construtor que receba como parâmetro o nome, o telefone e o email.
+- Criar dois contatos telefônicos com os dados abaixo:
+  
+  Primeiro contato
+    Nome: Fulano da Silva
+    Email: fulanosilva@gmail.com
+    Telefone: 41-987870101
+
+  Segundo contato
+    Nome: Siclano Gomes
+    Email: siclano_gomes@yahoo.com.br
+    Telefone: 41-32442131
+
+- Mostrar na tela o nome e o telefone de cada contato
+
+

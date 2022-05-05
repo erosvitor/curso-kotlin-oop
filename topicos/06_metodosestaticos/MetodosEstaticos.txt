@@ -1,0 +1,35 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - MÉTODOS ESTÁTICOS
+====================================================================================================
+
+Descrição
+----------------------------------------------------------------------------------------------------
+Métodos estáticos são métodos que não necessitam que a classe seja instanciada para serem utilizados.
+
+ 
+Criando métodos estáticos
+----------------------------------------------------------------------------------------------------
+
+class AreasFiguras {
+
+  companion object {
+    fun calcularAreaQuadrado(lado: Float): Float {
+      return lado * lado
+    }
+
+    fun calcularAreaTriangulo(base: Float, altura: Float): Float {
+      return (base * altura) / 2
+    }
+  }
+
+}
+
+fun main() {
+  var areaQuadrado = AreasFiguras.calcularAreaQuadrado(20f)
+  println(areaQuadrado)
+  
+  var areaTriangulo = AreasFiguras.calcularAreaTriangulo(10f, 5f)
+  println(areaTriangulo)
+}
+

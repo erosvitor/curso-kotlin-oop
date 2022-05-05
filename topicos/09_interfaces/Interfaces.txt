@@ -1,0 +1,43 @@
+
+====================================================================================================
+CURSO ORIENTAÇÃO A OBJETOS KOTLIN - INTERFACES
+====================================================================================================
+
+Descrição
+----------------------------------------------------------------------------------------------------
+Uma interface é um recurso da orientação a objetos utilizado para definir o que uma determinada 
+classe deve fazer não se preocupando em como será feito.
+
+
+Exemplo
+----------------------------------------------------------------------------------------------------
+Armazenar vários quadrados e retangulos numa lista e depois mostrar a área de cada um dos polígonos. 
+
+
+interface Polygon {
+  fun getArea(): Double
+}
+
+class Square(val side: Double) : Polygon {
+  override fun getArea(): Double {
+    return side * side
+  }
+}
+
+class Rectangle(val length: Double, val breadth: Double) : Polygon {
+  override fun getArea(): Double {
+    return length * breadth
+  }
+}
+
+fun main() {
+  val s1:Polygon = Square(4.0)
+  val r1:Polygon = Rectangle(5.0, 7.0)
+
+  val polygons = listOf(s1, r1)
+
+  for (polygon in polygons) {
+    println(polygon.getArea())
+  }
+}
+
